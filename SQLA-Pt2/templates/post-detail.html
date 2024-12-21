@@ -1,0 +1,8 @@
+<h1>{{ post.title }}</h1>
+<p>{{ post.content }}</p>
+<h4>By {{ post.user.first_name }} {{ post.user.last_name }}</h4>
+<a href="/users/{{ user.id }}">Back</a>
+<a href="/posts/{{ post.id }}/edit">Edit</a>
+<form action="/posts/{{ post.id }}/delete" method="POST">
+    <button type="submit">Delete</button>
+</form>
